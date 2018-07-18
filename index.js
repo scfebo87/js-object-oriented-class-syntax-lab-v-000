@@ -20,3 +20,26 @@ class BoardMember {
       return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`;
   }
 }
+
+
+
+
+
+class User {
+  constructor(name, email) {
+    this.name = name;
+    this.email = email;
+  }
+ 
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+ 
+ 
+class Teacher extends User {
+  sayHello(){
+    super.sayHello()
+    console.log('hello')
+  }
+}
