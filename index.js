@@ -21,25 +21,9 @@ class BoardMember {
   }
 }
 
-
-
-
-
-class User {
-  constructor(name, email) {
-    this.name = name;
-    this.email = email;
-  }
- 
-  sayHello() {
-    console.log(`Hello, my name is ${this.name}`);
+class Ceo extends BoardMember { 
+  hireEmployee() { 
+    return `Welcome aboard!`;
   }
 }
  
- 
-class Teacher extends User {
-  sayHello(){
-    super.sayHello()
-    console.log('hello')
-  }
-}
